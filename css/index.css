@@ -65,7 +65,7 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.headercss {
+.header-css {
 	display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
@@ -210,6 +210,43 @@ header {
 
 	.start-button {
 		margin-bottom: 8%;
+	}
+  }
+
+  @media (max-width: 500px) {
+	.header-css {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo {
+		display: flex;
+		justify-content: center;
+		margin-top: 4%;
+		margin-bottom: 4%;
+		border-bottom: 1px solid grey;
+		width: 100%;
+		padding-left: 28%;
+		padding-right: 28%;
+		padding-bottom: 2%;
+	}
+
+	nav a {
+		display: flex;
+		border-bottom: 1px solid grey;
+		width: 100%;
+		padding-left: 100%;
+		padding-right: 100%;
+		align-items: center;
+		justify-content: center;
+		padding-top: 5%;
+		padding-bottom: 5%;
 	}
   }
 
